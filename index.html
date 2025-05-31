@@ -1,0 +1,44 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <title>KrishiBot - Farmer Dashboard</title> <link rel="stylesheet" href="styles.css"/> </head> <body> <div class="container"> <header> <h1>🌾 KrishiBot Dashboard</h1> <p>Welcome, Farmer! 👨‍🌾</p> </header>
+php-template
+Copy
+Edit
+<section class="card">
+  <h2>Crop Sale Form</h2>
+  <form id="cropForm">
+    <label for="crop">Crop Type:</label>
+    <select id="crop" required>
+      <option value="onion">Onion</option>
+      <option value="tomato">Tomato</option>
+      <option value="wheat">Wheat</option>
+    </select>
+
+    <label for="quantity">Quantity (kg):</label>
+    <input type="number" id="quantity" required min="1"/>
+
+    <label for="location">Location:</label>
+    <select id="location" required>
+      <option value="Erode">Erode</option>
+      <option value="Salem">Salem</option>
+      <option value="Madurai">Madurai</option>
+    </select>
+
+    <button type="submit">Predict Price</button>
+  </form>
+</section>
+
+<section class="card" id="resultCard" style="display:none;">
+  <h2>Predicted Market Price</h2>
+  <p id="predictedPrice">₹ --</p>
+</section>
+
+<section class="card">
+  <h2>Subsidy Status</h2>
+  <p>✅ Eligible — ₹2000 credited to xyz@upi</p>
+</section>
+
+<footer>
+  <p>Powered by AI + Ethereum | 2025 Hackathon</p>
+</footer>
+</div> <script src="script.js"></script> </body> </html>
+
+
